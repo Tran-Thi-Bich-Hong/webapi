@@ -28,13 +28,14 @@ namespace QLBH.Common.DAL
         /// <param name="p">Predicate</param>
         /// <returns>Return query data</returns>
         IQueryable<T> Read(Expression<Func<T, bool>> p);
+        
 
         /// <summary>
         /// Read single object
         /// </summary>
         /// <param name="id">Primary key</param>
         /// <returns>Return the object</returns>
-        T Read(int id);
+        T  Read(int id);
        
 
         /// <summary>

@@ -27,16 +27,16 @@ namespace QLBH.DAL
         }
 
         #endregion
-
-
-
-       
+        #region -- Methods --
         public SingleRsp LayhhbyId(int id)
         {
             var res = new SingleRsp();
-            res.Data = All.Where(x => x.IdHh == id).Select(c=>c.Giahang);
+            res.Data = All.Where(x => x.IdHh == id).Select(x => x.Giahang);
             return res;
         }
+        #endregion
+
+
 
     }
 }

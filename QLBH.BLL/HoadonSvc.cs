@@ -68,10 +68,12 @@ namespace QLBH.BLL
             hoadon.Id = hoadonReq.MaHoaDon;
             hoadon.Idkhach = hoadonReq.IDkhachHang;
             hoadon.IdNv = hoadonReq.MaNhanVien;
-            
+            //int y = hoadonReq.MaHangHoa;
+            //int dongia = (int)hanghoaRep.LayhhbyId(y);
+            hoadon.Thanhtien = 20000 * hoadonReq.SoLuong;
             //int dongia = (int)hanghoaRep.LayhhbyId(hoadonReq.MaHangHoa);
             //hoadon.Thanhtien = dongia * hoadonReq.SoLuong;
-            hoadon.Thanhtien = 400000;
+            //hoadon.Thanhtien = 400000;
             //ICollection<Chitiethoadon> chitiethoadons = new List<Chitiethoadon>();
             Chitiethoadon chitiethoadon = new Chitiethoadon();
             chitiethoadon.Id = hoadonReq.MaHoaDon;
@@ -91,10 +93,8 @@ namespace QLBH.BLL
             hoadon.Id = hoadonReq.MaHoaDon;
             hoadon.Idkhach = hoadonReq.IDkhachHang;
             hoadon.IdNv = hoadonReq.MaNhanVien;
-
-            //int dongia = (int)hanghoaRep.LayhhbyId(hoadonReq.MaHangHoa);
-            //hoadon.Thanhtien = dongia * hoadonReq.SoLuong;
-            hoadon.Thanhtien = 400000;
+            hoadon.Thanhtien = 20000 * hoadonReq.SoLuong;
+            //hoadon.Thanhtien = 400000;
             //ICollection<Chitiethoadon> chitiethoadons = new List<Chitiethoadon>();
             Chitiethoadon chitiethoadon = new Chitiethoadon();
             chitiethoadon.Id = hoadonReq.MaHoaDon;
